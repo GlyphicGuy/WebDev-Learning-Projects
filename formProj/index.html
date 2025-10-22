@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: #464646;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        input {
+            max-width: 200px;
+            margin: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input:required {
+            border-left: 3px solid orange;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+
+        .card {
+            max-width: 220px;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            background: #000;
+            box-shadow: 0px 0px 18px rgba(100, 88, 88, 0.603);
+        }
+
+        .pf {
+
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .main {
+            display: flex;
+        }
+        h1{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Card Generator</h1>
+
+    <form action="">
+        <input type="text" placeholder="img link" id="pf" required>
+        <input type="text" placeholder="Name" id="name" required>
+        <input type="text" placeholder="Role" id="role" required>
+        <input type="text" placeholder="Info" id="info" required>
+        <input type="submit" id="btn" value="Submit">
+
+    </form>
+
+    <div class="main">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
